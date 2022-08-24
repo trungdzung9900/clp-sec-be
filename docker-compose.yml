@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    api:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+            target: development
+        command: 'yarn start:debug'
+        ports:
+            - '3000:3000'
+        # env_file:
+        #     - .env.development
+        volumes:
+            - '.:/usr/src/app'
+        networks:
+            - api-network
+
+networks:
+    api-network:
+      driver: bridge
