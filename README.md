@@ -18,4 +18,6 @@ FE use: React with socket.io
 
 
 # Result
-Website: http://ec2-13-112-157-12.ap-northeast-1.compute.amazonaws.com/client 
+Website: http://ec2-13-112-157-12.ap-northeast-1.compute.amazonaws.com/client (Api client to play the game) <br />
+http://ec2-13-112-157-12.ap-northeast-1.compute.amazonaws.com/dashboard (Api dashboard to see the result, and reset the result)
+                   
